@@ -95,3 +95,26 @@ spam.setdefault('color', 'black')  # 'black'
 spam #  {'color': 'black', 'name': 'Pooka', 'age': 5}
 spam.setdefault('color', 'white')  # 'black'
 spam # {'color': 'black', 'name': 'Pooka', 'age': 5}
+
+
+# CharacterCount.py
+message = 'It was a bright cold day in April, and the clocks were strinking thirteen'
+count = {}
+
+for character in message:
+    count.setdefault(character,0)
+    count[character] = count[character] + 1
+    
+print(count)
+
+
+# Pretty Print
+import pprint
+message = 'It was a bright cold day in April, and the clocks were strinking thirteen'
+count = {}
+
+for character in message:
+    count.setdefault(character,0)
+    count[character] = count[character] + 1
+    
+pprint.pprint(count)
